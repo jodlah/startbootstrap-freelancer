@@ -4492,6 +4492,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
   }
 }
+/*transparent navbar*/
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
@@ -4985,6 +4986,7 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
+    /*0px align img to navbar*/
     padding-top: 48px;
     padding-bottom: 48px;
   }

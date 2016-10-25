@@ -18,7 +18,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #CC9900;
   outline: none;
 }
 h1,
@@ -54,7 +54,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #CC9900;
   color: white;
 }
 hr.star-primary {
@@ -69,13 +69,16 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #CC9900;
   color: white;
 }
+/*swap container to jumbotron in section header*/
+/*
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+*/
 header img {
   display: block;
   margin: 0 auto 20px;
@@ -91,25 +94,33 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+/*swap container to jumbotron in section header*/
+/*
 @media (min-width: 768px) {
   header .container {
     padding-top: 200px;
     padding-bottom: 100px;
   }
+*/
   header .intro-text .name {
     font-size: 4.75em;
   }
   header .intro-text .skills {
     font-size: 1.75em;
   }
+.navbar-right {
+    font-size: 1.25em;
 }
+
+/*
 .navbar-custom {
-  background: #2C3E50;
+  background: #000000;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
 }
+*/
 .navbar-custom a:focus {
   outline: none;
 }
@@ -129,7 +140,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #CC9900;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +149,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: #CC9900;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #CC9900;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +165,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #CC9900;
   color: white;
-  border-color: #18BC9C;
+  border-color: #CC9900;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -164,6 +175,9 @@ header .intro-text .skills {
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
+/*Navbar transparency*/
+      background-color: transparent;
+      border-color: transparent;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
@@ -178,15 +192,18 @@ header .intro-text .skills {
     font-size: 1.5em;
   }
 }
+/*bg color and text color in portfolio section and contact me*/
 section {
-  padding: 100px 0;
+    padding: 100px 0;
+    background-color: #1E1E1E;
+    color: white;
 }
 section h2 {
   margin: 0;
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background-image: url(../img/grunge-danger-background.jpg);
   color: white;
 }
 @media (max-width: 767px) {
@@ -197,6 +214,24 @@ section.success {
     padding-top: 75px;
   }
 }
+
+/*jumbotron*/
+.jumbotron {
+    height: 680px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/kral-bud_main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+section#portolio {
+    padding-top: 48px;
+    background-color: black;
+    color: white;
+}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -208,7 +243,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(204, 153, 0, 0.7);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -289,7 +324,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #CC9900;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -323,7 +358,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: #CC9900;
   background: white;
   border: solid 2px white;
 }
@@ -371,8 +406,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: transparent;
+  border-color: white;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -381,8 +416,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: white;
-  background-color: #128f76;
-  border-color: #11866f;
+  background-color: #CC9900;
+  border-color: #CC9900;
 }
 .btn-success:active,
 .btn-success.active,
@@ -404,11 +439,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #CC9900;
+  border-color: #CC9900;
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: #CC9900;
   background-color: white;
 }
 .btn-social {
